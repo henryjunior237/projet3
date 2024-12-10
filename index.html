@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css"> 
+    <title>Calculatrice Scientifique</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled />
+        <div class="buttons">
+            <button class="number" onclick="appendToDisplay('7')">7</button>
+            <button class="number" onclick="appendToDisplay('8')">8</button>
+            <button class="number" onclick="appendToDisplay('9')">9</button>
+            <button class="operation" onclick="setOperation('/')">÷</button>
+            <button class="number" onclick="appendToDisplay('4')">4</button>
+            <button class="number" onclick="appendToDisplay('5')">5</button>
+            <button class="number" onclick="appendToDisplay('6')">6</button>
+            <button class="operation" onclick="setOperation('*')">×</button>
+            <button class="number" onclick="appendToDisplay('1')">1</button>
+            <button class="number" onclick="appendToDisplay('2')">2</button>
+            <button class="number" onclick="appendToDisplay('3')">3</button>
+            <button class="operation" onclick="setOperation('-')">−</button>
+            <button class="operation" onclick="clearDisplay()">C</button>
+            <button class="number" onclick="appendToDisplay('0')">0</button>
+            <button class="operation" onclick="calculate()">=</button>
+            <button class="operation" onclick="setOperation('+')">+</button>
+            <button class="operation" onclick="switchToScientificMode()">Mode Scientifique</button>
+            <button class="operation" onclick="switchToNormalMode()">Mode Normal</button>
+            <button class="operation" onclick="afficherHeure()">heures</button>
+        </div>
+        <div class="scientific-buttons hidden">
+            <button onclick="power()">x^y</button>
+            <button onclick="factorial()">n!</button>
+            <button onclick="squareRoot()">√x</button>
+            <button onclick="convertBase()">Conversion Base</button>
+            <button onclick="exponential()">e^x</button>
+            <button onclick="logarithm()">log(x)</button>
+            <button onclick="cosine()">cos(x)</button>
+            <button onclick="sine()">sin(x)</button>
+            <button onclick="tangent()">tan(x)</button>
+            <button onclick="modulo()">x mod y</button>
+            
+        </div>
+    </div>
+    <script src="typescript/main.js"></script>
+</body>
+</html>

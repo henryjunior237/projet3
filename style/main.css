@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; 
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 15px; 
+    padding: 20px;
+    background: rgba(23, 21, 21, 0.9); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px; 
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+}
+
+.buttons, .scientific-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 12px; 
+    font-size: 15px; 
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white; 
+    transition: background 0.3s;
+}
+
+
+button.number {
+    background-color: #ff4c4c; 
+}
+
+button.number:hover {
+    background-color: #c62828; 
+}
+
+
+button.operation {
+    background-color: #4caf50; 
+}
+
+button.operation:hover {
+    background-color: #388e3c; 
+}
+
+
+button.scientific {
+    background-color: #2196F3; 
+}
+
+button.scientific:hover {
+    background-color: #1976D2; 
+}
+
+.hidden {
+    display: none; 
+}
+
+.buttons.heures{
+    background-color: #c62828;
+}
+
+button.scientific.number {
+    background-color: #c62828;
+}
